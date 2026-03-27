@@ -39,12 +39,13 @@
         .logo-section { display: flex; align-items: center; gap: 1rem; }
         .logo {
             width: 60px; height: 60px;
-            background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
             border-radius: 12px;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 2.5rem; font-weight: bold;
-            color: var(--primary);
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .logo img {
+            width: 100%; height: 100%;
+            object-fit: cover;
         }
         .site-name { font-size: 1.8rem; font-weight: bold; }
         
@@ -127,7 +128,9 @@
     <div class="container">
         <header>
             <div class="logo-section">
-                <div class="logo">A</div>
+                <div class="logo">
+                    <img src="logo.jpg" alt="AIVANTAGE Logo">
+                </div>
                 <div class="site-name">AIVANTAGE</div>
             </div>
             <div class="founder-badge">
@@ -192,7 +195,12 @@
                 <a href="https://github.com/harshaldevloper" target="_blank">GitHub</a> •
                 <a href="https://dev.to/aiavantage" target="_blank">Dev.to</a>
             </div>
-            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">© 2026 AIVANTAGE. All rights reserved.</p>
+            <p style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.7;">
+                <a href="amazon-disclosure.html" style="color: inherit; text-decoration: underline;">Amazon Affiliate Disclosure</a> •
+                <a href="privacy.html" style="color: inherit; text-decoration: underline;">Privacy Policy</a> •
+                <a href="terms.html" style="color: inherit; text-decoration: underline;">Terms of Service</a>
+            </p>
+            <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.6;">© 2026 AIVANTAGE. All rights reserved.</p>
         </footer>
     </div>
 </body>
